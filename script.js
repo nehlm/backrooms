@@ -53,12 +53,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // Close aside overlay when clicking close button
     document.getElementById('closeAsideOverlay')?.addEventListener('click', closeAsideOverlay);
 
-    // Make only the tab image pulse when the video ends
+    // Make only the tab image pulse when the video ends & auto open aside overlay
     document.getElementById('videoElement')?.addEventListener('ended', function () {
         const asideTab = document.getElementById('asideTab');
+        const asideOverlay = document.getElementById('asideOverlay');
+
         if (asideTab) {
             asideTab.classList.add('video-ended'); // Add the opacity change class
             startTabPulse();
+        }
+
+        if (asideOverlay) {
+            showAsideOverlay(); // Automatically open the aside overlay
         }
     });
 });
