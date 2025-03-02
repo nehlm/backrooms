@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>BACKROOMS - Room 2</title>
+</head>
+<body class="body_room2">
+    <nav class="navbar">
+        <div class="surface_nav">
+            <a href="surface.html"><img class="nav_up" src="./icones/door.png" alt="Porte menant vers le haut"/></a>
+        </div>
+
+        <div class="backroom_nav">
+            <a href="backroom1.html"><img class="nav_step_left" src="./icones/step.png" alt="Traces de pas vers la gauche"/></a>
+            <a href="backroom1.html"><img class="nav_step_right" src="./icones/step.png" alt="Traces de pas vers la droite"/></a>
+        </div>
+    </nav>
+
+    <div class="camera_container item">
+        <a href="#" class="camera" id="cameraLink"><img src="./images/camera.png" alt="Un camescope abîmé, posé au sol"></a>
+    </div>
+
+    <div id="cameraOverlay" class="overlay">
+        <div class="overlay-content">
+            <span id="closeCameraOverlay" class="close-btn close-overlay"><img src="./icones/back.png" alt="Bouton retour"></span>
+            
+            <div class="overlay-item-image">
+                <img src="./images/phone_detail.png" alt="Un téléphone rayé">
+            </div>
+
+            <div class="overlay-text">
+                <div class="overlay-text-container">
+                    <h2>Un smartphone rayé</h2>
+                    <p>La batterie est presque vide.<br><br>
+                        Lorsque vous l’allumez,<br>pas de mot de passe.<br><br>
+                        Vous tombez directement<br>sur une vidéo.
+                    </p>
+                    <button id="openVideoButton" class="video-btn">VOUS LANCEZ LA VIDÉO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="asideOverlay">
+        <button id="closeAsideOverlay" class="close-btn"><img src="./icones/back_white.png"></button>
+        <div class="aside-content-container">
+            <div class="aside-content">
+                <a href="https://youtu.be/ZIFhglHn3W0?si=tGZBejUB8Y2C103r" target="_blank">
+                    <div class="additional-resources tag-video">
+                        <div class="resources-image-wrapper"><img src="./icones/video.png"></div>
+                        <p>[Kane Pixels] Backrooms vidéo informative</p>
+                    </div>
+                </a>
+
+                <a href="https://www.reddit.com/r/BackroomsTheory/comments/16a0o57/why_do_people_want_to_go_to_the_backrooms/?rdt=63003" target="_blank">
+                    <div class="additional-resources tag-post">
+                        <div class="resources-image-wrapper"><img src="./icones/post.png"></div>
+                        <p>[Reddit] Pourquoi aller dans les Backrooms ?</p>
+                    </div>
+                </a>
+
+                <a href="https://backrooms.fandom.com/wiki/Basics_of_the_Backrooms:_A_Guide" target="_blank">
+                    <div class="additional-resources tag-website">
+                        <div class="resources-image-wrapper"><img src="./icones/website.png"></div>
+                        <p>[Wiki] Comment se rendre dans les Backrooms</p>
+                    </div>
+                </a>
+
+                <a href="https://www.reddit.com/r/BackroomsTheory/comments/16a0o57/why_do_people_want_to_go_to_the_backrooms/?rdt=63003" target="_blank">
+                    <div class="additional-resources tag-video">
+                        <div class="resources-image-wrapper"><img src="./icones/video.png"></div>
+                        <p>Kane Pixels - Backrooms vidéo informative</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="asideTab"><img src="./icones/arrow.png"></div>
+
+    <div id="videoModal" class="video-overlay" style="display: none;">
+        <span id="closeVideoModal" class="close-btn"><img src="./icones/back.png" alt="Bouton retour"></span>
+        <div class="video-overlay-content">
+            <video id="videoElement" controls>
+                <source src="./videos/test.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

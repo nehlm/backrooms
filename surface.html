@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>BACKROOMS - Surface</title>
+</head>
+<body class="body_surface">
+    <nav class="navbar_surface">
+        <div class="surface_nav">
+            <a href="javascript:history.back()"><img class="nav_down" src="./icones/fall.png" alt="Chute menant vers le bas"/></a>
+        </div>
+    </nav>
+
+    <div class="pc_container item">
+        <a href="#" class="pc" id="pcLink"><img src="./images/pc.png" alt="Un pc allumé sur un bureau"></a>
+    </div>
+
+    <div id="pcOverlay" class="overlay">
+        <div class="overlay-content">
+            <span id="closePcOverlay" class="close-btn close-overlay"><img src="./icones/back.png" alt="Bouton retour"></span>
+            
+            <div class="pc-detail overlay-item-image">
+                <img src="./images/pc_detail.png" alt="Un pc portable">
+            </div>
+
+            <div class="overlay-text">
+                <div class="overlay-text-container">
+                    <h2>Un ordinateur portable</h2>
+                    <p>Des tas d'onglets Google sont restés ouverts.<br><br>
+                        La mémoire du PC semble presque pleine.<br><br>
+                        En fouillant un peu, vous tombez sur un fichier .mp4
+                    </p>
+                    <button id="openVideoButton" class="video-btn">VOUS OUVREZ LE FICHIER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="asideOverlay">
+        <button id="closeAsideOverlay" class="close-btn"><img src="./icones/back_white.png"></button>
+        <div class="aside-content-container">
+            <div class="aside-content">
+                <a href="https://youtu.be/ZIFhglHn3W0?si=tGZBejUB8Y2C103r" target="_blank">
+                    <div class="additional-resources tag-video">
+                        <div class="resources-image-wrapper"><img src="./icones/video.png"></div>
+                        <p>[Kane Pixels] Backrooms vidéo informative</p>
+                    </div>
+                </a>
+
+                <a href="https://www.reddit.com/r/BackroomsTheory/comments/16a0o57/why_do_people_want_to_go_to_the_backrooms/?rdt=63003" target="_blank">
+                    <div class="additional-resources tag-post">
+                        <div class="resources-image-wrapper"><img src="./icones/post.png"></div>
+                        <p>[Reddit] Pourquoi aller dans les Backrooms ?</p>
+                    </div>
+                </a>
+
+                <a href="https://backrooms.fandom.com/wiki/Basics_of_the_Backrooms:_A_Guide" target="_blank">
+                    <div class="additional-resources tag-website">
+                        <div class="resources-image-wrapper"><img src="./icones/website.png"></div>
+                        <p>[Wiki] Comment se rendre dans les Backrooms</p>
+                    </div>
+                </a>
+
+                <a href="https://www.reddit.com/r/BackroomsTheory/comments/16a0o57/why_do_people_want_to_go_to_the_backrooms/?rdt=63003" target="_blank">
+                    <div class="additional-resources tag-video">
+                        <div class="resources-image-wrapper"><img src="./icones/video.png"></div>
+                        <p>Kane Pixels - Backrooms vidéo informative</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="asideTab"><img src="./icones/arrow.png"></div>
+
+    <div id="videoModal" class="video-overlay" style="display: none;">
+        <span id="closeVideoModal" class="close-btn"><img src="./icones/back.png" alt="Bouton retour"></span>
+        <div class="video-overlay-content">
+            <video id="videoElement" controls>
+                <source src="./videos/test.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
