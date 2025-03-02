@@ -664,6 +664,10 @@ a:visited {
     }
 }
 
+.camera-detail {
+    max-width: 495px;
+}
+
 
 
 
@@ -707,6 +711,28 @@ a:visited {
 /*RESPONSIVE*/
 
 @media (max-width: 700px) {
+
+
+    /*ACCUEIL*/
+
+    .home_title_wrapper {
+        padding-top: 33vh;
+        width : 85%;
+    }
+    
+    .home_subtxt_wrapper {
+        padding-bottom: 50px;
+        width : 85%;
+    }
+    
+    .pas-container {
+        width: 80%;
+        max-width: 550px;
+        margin-top: 77vh;
+    }
+
+
+    /*OVERLAYS*/
 
     .overlay-content {
         display: flex;
@@ -770,6 +796,17 @@ a:visited {
         left: 50%; 
         transform: translateX(-50%) translateX(40px);
         width: max-content;
+    }
+
+
+
+
+
+    /*PAGE BACKROOM 2*/
+
+    .camera-detail img {
+        width: 70%;
+        max-width: 275px;
     }
 
 
